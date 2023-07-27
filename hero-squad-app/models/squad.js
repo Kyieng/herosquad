@@ -3,7 +3,7 @@ class Squad {
       this.name = name;
       this.maxSize = maxSize;
       this.cause = cause;
-      this.heroes = []; // To store assigned heroes
+      this.heroes = [];
     }
   
     addHero(hero) {
