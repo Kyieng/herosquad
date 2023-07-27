@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Create a New Squad</title>
+</head>
+<body>
+  <h1>Create a New Squad</h1>
+  <form action="/squads" method="post">
+    <label>Name: <input type="text" name="name"></label><br>
+    <label>Max Size: <input type="number" name="maxSize"></label><br>
+    <label>Cause: <input type="text" name="cause"></label><br>
+
+    <h2>Select Heroes for the Squad:</h2>
+    %.forEach((hero) => { %>
+      <label>
+        <input type="checkbox" name="heroIds" value="<%= hero.id %>">
+        %= hero.name %> - %= hero.specialPower %>
+      </label><br>
+    % }); %>
+
+    <input type="submit" value="Create Squad">
+  </form>
+</body>
+</html>

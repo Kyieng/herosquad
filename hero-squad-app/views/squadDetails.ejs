@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Squad Details</title>
+</head>
+<body>
+  % if (squad) { %>
+    <h1>%= squad.name %> Squad</h1>
+    <p>Cause: %= squad.cause %></p>
+    <p>Max Size: %= squad.maxSize %></p>
+    <h2>Heroes in the Squad:</h2>
+    <ul>
+      % squad.heroes.forEach((hero) => { %>
+        <li>%= hero.name %> - %= hero.specialPower %></li>
+      % }); %>
+    </ul>
+  % } else { %>
+    <p>Squad not found!</p>
+  % } %>
+  <a href="/">Back to Home</a>
+</body>

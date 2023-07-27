@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+   
+  }
+  
+  .navbar {
+    background-color: #b911b9; /* Purple color */
+    padding: 5px;
+    height: 50px;
+  }
+
+  .navbar a{
+    color: #fff;
+  }
+  
+  .content-container {
+    background-image: url('/wakanda.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 400px;
+  }
+  
+  .container form{
+    background-color: rgba(176, 3, 228, 0.8); 
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 400px;
+    margin: 50px auto;
+  }
+  
+  .containerform h3 {
+    text-align: center;
+    font-style: italic;
+    color: #fff;
+  }
+  
+  .containerform p {
+    text-align: center;
+    color: #fff;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+
+  input {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    border: none;
+    background-color: #800080; 
+    color: #fff; 
+    border-radius: 5px;
+    cursor: pointer;
+  }

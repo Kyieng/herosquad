@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hero Squad App</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <h1>Hero Squad App</h1>
+
+  <!-- Display all heroes -->
+  <h2>Heroes:</h2>
+  <ul
+    % heroes.forEach((hero) => { %>
+      <li>%= hero.name %> - %= hero.specialPower %></li>
+    % }); %>
+  </ul>
+
+  <!-- Display all squads -->
+  <h2>Squads:</h2>
+  <ul>
+    % squads.forEach((squad) => { %>
+      <li>
+        %= squad.name %> - %= squad.cause %>
+        <a href="/squads/%= squad.id %>">View Details</a>
+      </li>
+    % }); %>
+  </ul>
+
+  <!-- Link to add new heroes -->
+  <a href="/heroes/new">Add a New Hero</a>
+  <!-- Link to create a new squad -->
+  <a href="/squads/new">Create a New Squad</a>
+
+</body>
+</html>
